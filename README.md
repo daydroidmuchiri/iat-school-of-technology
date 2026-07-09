@@ -9,9 +9,12 @@ Static website for IAT School of Technology, Nairobi, Kenya.
 - `index.html` — single-page site: utility bar, hero slider, quick-access tiles,
   animated stats, about, schools, programmes, admissions, news & events
   (with announcements and date-badged events), testimonials, why IAT, contact,
-  multi-column footer
-- `css/style.css` — all styles, responsive, no external dependencies
+  multi-column footer. Icons are an inline SVG sprite.
+- `css/style.css` — institutional design system (navy/gold, serif display
+  headings), responsive, no external dependencies
 - `js/main.js` — hero slider, count-up stats, mobile nav, scroll-reveal, scroll-to-top
+- `img/` — photography from Unsplash (free licence); replace with the school's
+  own photos when available
 
 ## Editing
 
