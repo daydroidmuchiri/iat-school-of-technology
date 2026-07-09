@@ -10,6 +10,23 @@
 </head>
 <body>
 
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-contact">
+        <a href="tel:+254700000000">📞 +254 700 000 000</a>
+        <a href="mailto:admissions@iatschool.ac.ke">✉️ admissions@iatschool.ac.ke</a>
+      </div>
+      <nav class="utility-links" aria-label="Audience links">
+        <a href="#contact">Students</a>
+        <a href="#contact">Staff</a>
+        <a href="#contact">Alumni</a>
+        <a href="#contact">Student Portal</a>
+        <a href="#contact">eLearning</a>
+      </nav>
+    </div>
+  </div>
+
   <header class="site-header" id="top">
     <nav class="nav container">
       <a href="#top" class="brand">
@@ -21,9 +38,10 @@
       </button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#schools">Schools</a></li>
         <li><a href="#programs">Programmes</a></li>
         <li><a href="#admissions">Admissions</a></li>
-        <li><a href="#why">Why IAT</a></li>
+        <li><a href="#news">News &amp; Events</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#admissions" class="btn btn-small">Apply Now</a></li>
       </ul>
@@ -32,50 +50,96 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Karibu IAT · Est. Nairobi</p>
-          <h1>Build Your Future in <span class="accent">Technology</span></h1>
-          <p class="lead">
-            Practical, industry-driven training in software engineering, cybersecurity,
-            data science and more — right in the heart of Nairobi. Learn by doing,
-            graduate job-ready.
-          </p>
-          <div class="hero-actions">
-            <a href="#programs" class="btn btn-primary">Explore Programmes</a>
-            <a href="#admissions" class="btn btn-ghost">How to Apply</a>
+    <!-- Hero slider -->
+    <section class="hero-slider" aria-label="Highlights">
+      <div class="slides">
+
+        <article class="slide slide-1 active">
+          <div class="container slide-inner">
+            <div class="slide-copy">
+              <p class="eyebrow">Karibu IAT · Nairobi</p>
+              <h1>Build Your Future in <span class="accent">Technology</span></h1>
+              <p class="lead">Practical, industry-driven training in software engineering, cybersecurity and data science — in the heart of Nairobi.</p>
+              <div class="slide-actions">
+                <a href="#programs" class="btn btn-primary">Explore Programmes</a>
+                <a href="#admissions" class="btn btn-ghost">How to Apply</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="hero-art reveal" aria-hidden="true">
-          <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#0e7a5f"/>
-                <stop offset="1" stop-color="#0b3d5c"/>
-              </linearGradient>
-            </defs>
-            <rect x="30" y="40" width="340" height="220" rx="14" fill="url(#g1)"/>
-            <rect x="30" y="40" width="340" height="34" rx="14" fill="#092e46"/>
-            <circle cx="52" cy="57" r="5" fill="#e5484d"/>
-            <circle cx="70" cy="57" r="5" fill="#f5a623"/>
-            <circle cx="88" cy="57" r="5" fill="#30c48d"/>
-            <text x="60" y="115" font-family="monospace" font-size="15" fill="#a7f3d0">&lt;class&gt;</text>
-            <text x="80" y="145" font-family="monospace" font-size="15" fill="#ffffff">learn.build(</text>
-            <text x="100" y="175" font-family="monospace" font-size="15" fill="#fde68a">"your_future"</text>
-            <text x="80" y="205" font-family="monospace" font-size="15" fill="#ffffff">);</text>
-            <text x="60" y="235" font-family="monospace" font-size="15" fill="#a7f3d0">&lt;/class&gt;</text>
-            <rect x="120" y="260" width="160" height="14" rx="7" fill="#0b3d5c"/>
-            <rect x="160" y="274" width="80" height="26" rx="6" fill="#092e46"/>
-          </svg>
-        </div>
+        </article>
+
+        <article class="slide slide-2">
+          <div class="container slide-inner">
+            <div class="slide-copy">
+              <p class="eyebrow">Admissions Open</p>
+              <h1>September 2026 Intake <span class="accent">Now Open</span></h1>
+              <p class="lead">Apply today for diploma and certificate programmes. Flexible payment plans and scholarships available for top performers.</p>
+              <div class="slide-actions">
+                <a href="#admissions" class="btn btn-primary">Apply Now</a>
+                <a href="#contact" class="btn btn-ghost">Talk to Admissions</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-3">
+          <div class="container slide-inner">
+            <div class="slide-copy">
+              <p class="eyebrow">Campus News</p>
+              <h1>New Cybersecurity &amp; Cloud <span class="accent">Labs Launched</span></h1>
+              <p class="lead">Train on modern infrastructure with our upgraded security operations and cloud computing laboratories.</p>
+              <div class="slide-actions">
+                <a href="#news" class="btn btn-primary">Read the News</a>
+                <a href="#schools" class="btn btn-ghost">Our Schools</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
-      <div class="hero-stats container reveal">
-        <div class="stat"><strong>2,500+</strong><span>Graduates</span></div>
-        <div class="stat"><strong>12</strong><span>Programmes</span></div>
-        <div class="stat"><strong>3</strong><span>Intakes per Year</span></div>
-        <div class="stat"><strong>85%</strong><span>Career Placement</span></div>
+
+      <button class="slider-arrow prev" aria-label="Previous slide">‹</button>
+      <button class="slider-arrow next" aria-label="Next slide">›</button>
+      <div class="slider-dots" role="tablist" aria-label="Slide navigation">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- Quick access tiles -->
+    <section class="quick-tiles" aria-label="Quick links">
+      <div class="container tiles-grid">
+        <a href="#programs" class="tile reveal">
+          <span class="tile-icon">🎓</span>
+          <h3>Programmes on Offer</h3>
+          <p>Browse our diploma and certificate courses.</p>
+        </a>
+        <a href="#admissions" class="tile reveal">
+          <span class="tile-icon">📝</span>
+          <h3>How to Apply</h3>
+          <p>Three simple steps to join IAT.</p>
+        </a>
+        <a href="#admissions" class="tile reveal">
+          <span class="tile-icon">💰</span>
+          <h3>Fees &amp; Scholarships</h3>
+          <p>Flexible plans and merit awards.</p>
+        </a>
+        <a href="#contact" class="tile reveal">
+          <span class="tile-icon">🖥️</span>
+          <h3>Student Portal</h3>
+          <p>Results, timetables and eLearning.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Stats counters -->
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong><span class="counter" data-target="10">0</span>+</strong><span>Years of Excellence</span></div>
+        <div class="stat reveal"><strong><span class="counter" data-target="12">0</span></strong><span>Programmes</span></div>
+        <div class="stat reveal"><strong><span class="counter" data-target="2500">0</span>+</strong><span>Graduates</span></div>
+        <div class="stat reveal"><strong><span class="counter" data-target="85">0</span>%</strong><span>Career Placement</span></div>
       </div>
     </section>
 
@@ -95,6 +159,7 @@
             From our campus in Nairobi, we serve school leavers, career changers and working
             professionals across Kenya and the region with flexible day, evening and weekend classes.
           </p>
+          <a href="#schools" class="btn btn-primary">Explore Our Schools</a>
         </div>
         <div class="about-cards reveal">
           <div class="card">
@@ -113,8 +178,59 @@
       </div>
     </section>
 
+    <!-- Our Schools -->
+    <section id="schools" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Schools</p>
+          <h2>Three Schools, One Standard of Excellence</h2>
+        </div>
+        <div class="schools-grid">
+          <article class="school card reveal">
+            <div class="school-banner banner-computing"></div>
+            <div class="school-body">
+              <h3>School of Computing &amp; Engineering</h3>
+              <p>Software engineering, networking, cybersecurity and cloud computing.</p>
+              <ul class="school-list">
+                <li>Diploma in Software Engineering</li>
+                <li>Certificate in Networking &amp; Cybersecurity</li>
+                <li>Certificate in Cloud Computing</li>
+              </ul>
+              <a href="#programs" class="text-link">View programmes →</a>
+            </div>
+          </article>
+          <article class="school card reveal">
+            <div class="school-banner banner-business"></div>
+            <div class="school-body">
+              <h3>School of Business &amp; Data</h3>
+              <p>Where business insight meets data science and enterprise IT systems.</p>
+              <ul class="school-list">
+                <li>Diploma in Data Science &amp; Analytics</li>
+                <li>Diploma in Business Information Technology</li>
+                <li>Professional short courses</li>
+              </ul>
+              <a href="#programs" class="text-link">View programmes →</a>
+            </div>
+          </article>
+          <article class="school card reveal">
+            <div class="school-banner banner-design"></div>
+            <div class="school-body">
+              <h3>School of Design &amp; Media</h3>
+              <p>Creative technology: design, multimedia production and user experience.</p>
+              <ul class="school-list">
+                <li>Certificate in Graphic Design &amp; Multimedia</li>
+                <li>UI/UX design workshops</li>
+                <li>Digital content production</li>
+              </ul>
+              <a href="#programs" class="text-link">View programmes →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Programmes -->
-    <section id="programs" class="section section-alt">
+    <section id="programs" class="section">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Programmes</p>
@@ -163,36 +279,129 @@
     </section>
 
     <!-- Admissions -->
-    <section id="admissions" class="section">
+    <section id="admissions" class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Admissions</p>
-          <h2>Joining IAT is Simple</h2>
-          <p class="lead">Intakes in January, May and September. Apply in three steps.</p>
+          <h2>Your Journey Starts Here</h2>
+          <p class="lead">Intakes in January, May and September. Three steps and you're in.</p>
         </div>
         <ol class="steps">
           <li class="card reveal">
             <span class="step-num">1</span>
-            <h3>Apply</h3>
-            <p>Send your application by email or visit our Nairobi campus. No application fee.</p>
+            <h3>You Apply</h3>
+            <p>Send your application by email or visit our Nairobi campus. No application fee. You'll need your KCSE certificate or equivalent, ID or passport, and one passport photo.</p>
           </li>
           <li class="card reveal">
             <span class="step-num">2</span>
-            <h3>Submit Documents</h3>
-            <p>KCSE certificate or equivalent, national ID or passport, and one passport photo.</p>
+            <h3>You Get Ready</h3>
+            <p>Receive your admission letter, pay the first instalment and attend orientation. Our team helps you plan your schedule around work and life.</p>
           </li>
           <li class="card reveal">
             <span class="step-num">3</span>
-            <h3>Enrol</h3>
-            <p>Receive your admission letter, pay the first instalment and start your classes.</p>
+            <h3>We Connect</h3>
+            <p>Start classes, join the student community and get matched with mentors and internship partners from day one.</p>
           </li>
         </ol>
         <div class="cta-band reveal">
           <div>
             <h3>Ready to start your tech journey?</h3>
-            <p>The next intake is open. Flexible payment plans available.</p>
+            <p>The September 2026 intake is open. Flexible payment plans and merit scholarships available.</p>
           </div>
           <a href="#contact" class="btn btn-light">Talk to Admissions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News, Announcements & Events -->
+    <section id="news" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">News &amp; Events</p>
+          <h2>What's Happening at IAT</h2>
+        </div>
+        <div class="news-layout">
+
+          <div class="news-cards">
+            <article class="news-card card reveal">
+              <div class="news-banner banner-computing"><span>Campus</span></div>
+              <div class="news-body">
+                <time datetime="2026-06-28">28 June 2026</time>
+                <h3>IAT Launches Upgraded Cybersecurity &amp; Cloud Labs</h3>
+                <p>Students now train on a dedicated security operations centre and multi-cloud lab environment.</p>
+              </div>
+            </article>
+            <article class="news-card card reveal">
+              <div class="news-banner banner-business"><span>Partnerships</span></div>
+              <div class="news-body">
+                <time datetime="2026-06-14">14 June 2026</time>
+                <h3>New Internship Partnerships with Nairobi Tech Firms</h3>
+                <p>Five leading companies join our placement programme, expanding opportunities for graduates.</p>
+              </div>
+            </article>
+            <article class="news-card card reveal">
+              <div class="news-banner banner-design"><span>Students</span></div>
+              <div class="news-body">
+                <time datetime="2026-05-30">30 May 2026</time>
+                <h3>IAT Students Win Regional Innovation Hackathon</h3>
+                <p>A team from the School of Computing took first place with an agritech mobile solution.</p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="news-side">
+            <div class="card reveal">
+              <h3 class="side-title">📢 Announcements</h3>
+              <ul class="announce-list">
+                <li><a href="#admissions">September 2026 intake applications now open</a></li>
+                <li><a href="#admissions">Merit scholarship applications close 15 August</a></li>
+                <li><a href="#contact">Evening class schedules updated for Term 3</a></li>
+                <li><a href="#contact">Graduation ceremony set for 27 November</a></li>
+              </ul>
+            </div>
+            <div class="card reveal">
+              <h3 class="side-title">📅 Upcoming Events</h3>
+              <ul class="event-list">
+                <li>
+                  <span class="event-date"><strong>18</strong>Jul</span>
+                  <div><h4>Open Day &amp; Campus Tours</h4><p>9:00am – 3:00pm, Nairobi Campus</p></div>
+                </li>
+                <li>
+                  <span class="event-date"><strong>02</strong>Aug</span>
+                  <div><h4>Career Fair with Hiring Partners</h4><p>10:00am, Main Hall</p></div>
+                </li>
+                <li>
+                  <span class="event-date"><strong>05</strong>Sep</span>
+                  <div><h4>September Intake Orientation</h4><p>8:30am, Auditorium</p></div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Student Voices</p>
+          <h2>Our Students Create a Vibrant Community</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial card reveal">
+            <p>"The projects I built in class became my portfolio. I walked into my first developer interview with real work to show."</p>
+            <footer><strong>Wanjiku M.</strong><span>Software Engineering, Class of 2025</span></footer>
+          </blockquote>
+          <blockquote class="testimonial card reveal">
+            <p>"Evening classes let me keep my job while retraining. Within a year I moved into a cloud support role."</p>
+            <footer><strong>Brian O.</strong><span>Cloud Computing, Class of 2024</span></footer>
+          </blockquote>
+          <blockquote class="testimonial card reveal">
+            <p>"The instructors work in the industry, so everything we learned was current — the labs, the tools, the workflows."</p>
+            <footer><strong>Amina H.</strong><span>Cybersecurity, Class of 2025</span></footer>
+          </blockquote>
         </div>
       </div>
     </section>
@@ -243,14 +452,58 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark">IAT</span>
+          <span class="brand-text">School of Technology<small>Nairobi, Kenya</small></span>
+        </div>
+        <p class="footer-blurb">Practical, career-focused technology education in the heart of Nairobi since 2016.</p>
+        <div class="social-row" aria-label="Social media">
+          <a href="#top" aria-label="Facebook">ⓕ</a>
+          <a href="#top" aria-label="X / Twitter">𝕏</a>
+          <a href="#top" aria-label="Instagram">◎</a>
+          <a href="#top" aria-label="LinkedIn">in</a>
+          <a href="#top" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About IAT</a></li>
+          <li><a href="#schools">Our Schools</a></li>
+          <li><a href="#programs">Programmes</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#news">News &amp; Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Student Resources</h4>
+        <ul>
+          <li><a href="#contact">Student Portal</a></li>
+          <li><a href="#contact">eLearning</a></li>
+          <li><a href="#contact">Timetables</a></li>
+          <li><a href="#contact">Library</a></li>
+          <li><a href="#contact">Fee Payment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>Moi Avenue, Nairobi CBD</li>
+          <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+          <li><a href="mailto:admissions@iatschool.ac.ke">admissions@iatschool.ac.ke</a></li>
+          <li>Mon–Fri 8:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
       <p>© <span id="year"></span> IAT School of Technology · Nairobi, Kenya</p>
-      <p class="footer-links">
-        <a href="#about">About</a> · <a href="#programs">Programmes</a> ·
-        <a href="#admissions">Admissions</a> · <a href="#contact">Contact</a>
-      </p>
+      <p><a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
   <script src="js/main.js"></script>
 </body>
